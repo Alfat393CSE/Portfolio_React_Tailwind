@@ -1,0 +1,3 @@
+.floating-back-top { position: fixed; bottom: 24px; right: 24px; z-index: 40; display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid #7497ea55; border-radius: 12px; color: #fff; background: var(--accent); box-shadow: 0 7px 25px #0003; }.floating-back-top:hover { background: #1d4ed8; }
+
+@media(max-width:767px) { .floating-back-top { right: 16px; bottom: 16px; width: 38px; height: 38px; } }

@@ -1,0 +1,27 @@
+/* Equal spacing along a responsive elliptical path; logos remain upright. */
+@supports (offset-path: ellipse(50% 50% at 50% 50%)) {
+  .hero .tech-labels { inset: 12px 2px 15px; }
+  .hero .tech-label {
+    top: 0; left: 0; right: auto; bottom: auto;
+    offset-path: ellipse(50% 50% at 50% 50%);
+    offset-anchor: center;
+    offset-rotate: 0deg;
+    offset-distance: var(--orbit-position);
+    animation: portrait-orbit 45s linear var(--orbit-delay) infinite;
+  }
+}
+@keyframes portrait-orbit {
+  from { offset-distance: 0%; }
+  to { offset-distance: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *:before,
+  *:after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

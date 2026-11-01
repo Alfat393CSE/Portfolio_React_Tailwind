@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import "./base.css";
+@import "./hero.css";
+@import "./about.css";
+@import "./expertise.css";
+@import "./projects.css";
+@import "./experience.css";
+@import "./research.css";
+@import "./motion.css";
+@import "./contact.css";
+@import "./about-layout.css";
+@import "./back-to-top.css";

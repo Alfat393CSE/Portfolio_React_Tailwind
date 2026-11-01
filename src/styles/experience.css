@@ -1,0 +1,29 @@
+.experience-timeline { position: relative; list-style: none; padding: 0; margin: 45px 0 0; }
+.experience-timeline:before { content: ''; position: absolute; left: 225px; top: 19px; bottom: 22px; width: 1px; background: linear-gradient(#4774d48a, var(--line)); }
+.experience-row { position: relative; display: grid; grid-template-columns: 195px minmax(0, 1fr); gap: 62px; padding-bottom: 30px; }
+.experience-row:last-child { padding-bottom: 0; }
+.experience-date { padding-top: 20px; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+.experience-date-range { color: var(--text); font-size: 12px; font-weight: 500; line-height: 1.7; }
+.experience-type { color: var(--muted); font-size: 10px; line-height: 1.7; }
+.experience-current { display: inline-flex; align-items: center; gap: 6px; color: #72bfa0; font-size: 9px; margin-top: 3px; }
+.experience-current > span { width: 5px; height: 5px; border-radius: 50%; background: #72bfa0; }
+.experience-node { position: absolute; top: 16px; left: 209px; width: 33px; height: 33px; display: grid; place-items: center; border-radius: 50%; color: #83a7ff; background: var(--bg); border: 1px solid #5e83d869; box-shadow: 0 0 0 5px var(--bg); }
+.experience-card { min-width: 0; padding: 30px; background: linear-gradient(135deg,#4777d908,transparent 65%),var(--card); border: 1px solid var(--line); border-radius: 16px; }
+.experience-card-heading { display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 14px; }
+.experience-card-heading h3 { font-size: 20px; line-height: 1.4; letter-spacing: -.5px; margin: 0 0 8px; }
+.experience-company { display: inline-flex; align-items: center; gap: 7px; color: #88a9fa; font-size: 12px; line-height: 1.7; }
+.experience-company:hover { color: #b7cbff; }
+.experience-location { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 10px; padding-top: 5px; }
+.experience-overview { color: var(--muted); font-size: 13px; line-height: 1.9; margin: 21px 0 24px; }
+.experience-card h4 { color: var(--text); font-size: 11px; font-weight: 600; line-height: 1.6; margin: 0 0 13px; }
+.experience-responsibilities { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 11px; }
+.experience-responsibilities li { position: relative; padding-left: 17px; color: var(--muted); font-size: 12px; line-height: 1.9; }
+.experience-responsibilities li:before { content: ''; position: absolute; left: 0; top: 9px; width: 4px; height: 4px; border-radius: 50%; background: #7298ed; }
+.experience-technologies { list-style: none; display: flex; flex-wrap: wrap; gap: 7px; margin: 0; padding: 0; }
+.experience-technologies li { color: var(--muted); font-size: 10px; line-height: 1.7; padding: 5px 10px; background: var(--bg); border: 1px solid var(--line); border-radius: 6px; }
+.experience-contributions { margin-top: 25px; padding-top: 22px; border-top: 1px solid var(--line); }
+.experience-contributions > div { display: flex; flex-wrap: wrap; gap: 12px 20px; }
+.experience-contributions a { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; line-height: 1.8; color: #88a9fa; }
+.experience-contributions a:hover { text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 1023px) { .experience-row { grid-template-columns: 155px minmax(0,1fr); gap: 48px; }.experience-timeline:before { left: 178px; }.experience-node { left: 162px; }.experience-card { padding: 25px; } }
+@media (max-width: 767px) { .experience-timeline { margin-top: 32px; }.experience-row { grid-template-columns: minmax(0,1fr); gap: 15px; padding-left: 33px; padding-bottom: 32px; }.experience-timeline:before { left: 10px; top: 12px; }.experience-node { left: -3px; top: 5px; width: 27px; height: 27px; }.experience-node svg { width: 14px; height: 14px; }.experience-date { align-items: start; padding-top: 5px; gap: 5px; }.experience-current { margin-top: 2px; }.experience-card { padding: 23px 20px; }.experience-card-heading h3 { font-size: 18px; }.experience-overview { margin-top: 18px; font-size: 12px; }.experience-responsibilities li { font-size: 12px; }.experience-date-range { font-size: 12px; } }

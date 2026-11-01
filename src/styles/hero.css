@@ -1,0 +1,51 @@
+/* First impression: introduction and a portrait framed by the technology stack. */
+.hero { min-height: 100svh; grid-template-columns: 1.15fr 1fr; gap: 65px; padding-top: 155px; padding-bottom: 100px; }
+.hero-copy > .eyebrow { text-transform: none; letter-spacing: .9px; color: #7cb99a; font-size: 11px; margin-bottom: 26px; }
+.hero-copy .status-dot { background: #4ade80; box-shadow: 0 0 0 4px #4ade8014; }
+.hero h1 { font-size: clamp(40px, 4.3vw, 60px); line-height: 1.15; letter-spacing: -2.5px; }
+.hero h1 .accent-text { display: block; }
+.hero-title { font-size: clamp(16px, 1.7vw, 21px); line-height: 1.5; font-weight: 500; margin: 22px 0 0; }
+.hero-description { margin-top: 18px; }
+.hero-socials { display: flex; align-items: center; gap: 12px; margin-top: 30px; }
+.hero-socials > a, .unavailable-social { position: relative; width: 41px; height: 41px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 10px; color: var(--muted); transition: color .2s, border-color .2s, background .2s; }
+.hero-socials > a:hover { color: #739aff; border-color: #2563eb88; background: #2563eb12; }
+.unavailable-social { color: var(--muted); cursor: help; border-style: dashed; }
+.social-tooltip { display: none; position: absolute; z-index: 10; left: 50%; bottom: calc(100% + 10px); transform: translateX(-50%); width: 180px; padding: 10px; border-radius: 8px; background: var(--card); color: var(--text); font-size: 11px; text-align: center; border: 1px solid var(--line); }
+.unavailable-social:hover .social-tooltip, .unavailable-social:focus .social-tooltip { display: block; }
+.social-caption { color: var(--muted); font-size: 10px; margin-left: 6px; }
+.portrait-composition { isolation: isolate; margin-inline: 15px; }
+.portrait-glow { position: absolute; z-index: -1; inset: -55px; border-radius: 50%; background: radial-gradient(ellipse, #2563eb33, #6366f110 50%, transparent 70%); }
+.hero .portrait-frame { margin: 15px; }
+.hero .floating-code { bottom: 90px; left: -12px; z-index: 3; padding: 12px; }
+.hero .portrait-caption { bottom: 22px; }
+.tech-labels { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
+.tech-label { position: absolute; display: flex; align-items: center; gap: 7px; padding: 9px 12px; border: 1px solid #6a8ac03b; border-radius: 9px; background: var(--header); backdrop-filter: blur(12px); box-shadow: 0 5px 20px #00000016; font-size: 10px; font-weight: 500; white-space: nowrap; }
+.tech-dot { width: 5px; height: 5px; border-radius: 50%; background: #60a5fa; }
+.tech-label-0 { top: 0; left: 5%; }.tech-label-1 { top: 9%; right: -5%; }.tech-label-2 { top: 29%; left: -7%; }.tech-label-3 { top: 39%; right: -6%; }.tech-label-4 { top: 17%; left: -2%; }.tech-label-5 { top: 57%; right: -3%; }.tech-label-6 { bottom: 0; left: 5%; }.tech-label-7 { bottom: 14%; right: -7%; }.tech-label-8 { bottom: -2%; right: 13%; }
+.tech-label-1 .tech-dot, .tech-label-2 .tech-dot { background: #65c68a; }.tech-label-7 .tech-dot, .tech-label-8 .tech-dot { background: #e7c65c; }
+.code-decoration { position: absolute; top: -25px; right: 28%; color: #668ae557; font-family: monospace; font-size: 28px; transform: rotate(12deg); }
+@media (max-width: 1199px) and (min-width: 768px) { .hero { gap: 25px; }.hero h1 { font-size: 43px; }.hero-buttons { flex-wrap: wrap; }.hero .floating-code { bottom: 75px; }.portrait-caption strong { font-size: 17px; } }
+@media (max-width: 767px) { .hero { grid-template-columns: 1fr; gap: 65px; padding-top: 130px; padding-bottom: 95px; }.hero h1 { font-size: clamp(38px, 9vw, 58px); letter-spacing: -1.8px; }.hero-title { font-size: 18px; }.hero .portrait-composition { width: 88%; margin: 0; }.tech-label { font-size: 9px; padding: 7px 9px; }.hero .floating-code { bottom: 80px; left: -10px; }.hero .floating-code strong { font-size: 10px; }.hero .floating-code span { font-size: 9px; }.hero .portrait-caption { left: 18px; }.hero .portrait-caption strong { font-size: 18px; }.hero .portrait-caption > span { font-size: 7px; }.hero-socials { gap: 10px; }.social-caption { margin-left: 0; }.code-decoration { top: -30px; } }
+/* A restrained portrait frame with icon-only technology satellites. */
+.hero .portrait-composition { padding: 28px 25px 34px; }
+.hero .portrait-frame { margin: 0; border-radius: 18px; border: 1px solid #8aa4d53b; box-shadow: 0 25px 65px #00000030, 0 0 0 9px #688bd306; }
+.hero .portrait-shade { background: linear-gradient(0deg, #0b112026, transparent 32%); }
+.hero .portrait-grid { opacity: .35; }
+.hero .portrait-glow { inset: -30px; background: radial-gradient(ellipse at 50% 45%, #2563eb24, transparent 68%); }
+.hero .tech-label { width: 52px; height: 52px; padding: 0; justify-content: center; border-radius: 14px; background: var(--bg); color: var(--tech-color); border: 1px solid #7897c73d; box-shadow: 0 8px 22px #00000026, inset 0 1px 0 #ffffff08; backdrop-filter: none; }
+.hero .tech-label-0 { top: 1%; left: 11%; }
+.hero .tech-label-1 { top: 12%; right: 0; }
+.hero .tech-label-2 { top: 36%; left: 0; }
+.hero .tech-label-3 { top: 40%; right: -1%; }
+.hero .tech-label-4 { top: 18%; left: -1%; }
+.hero .tech-label-5 { top: 61%; right: 0; }
+.hero .tech-label-6 { bottom: 0; left: 13%; }
+.hero .tech-label-7 { bottom: 14%; right: 1%; }
+.hero .tech-label-8 { bottom: 0; right: 20%; }
+.hero .frame-corner { width: 55px; height: 55px; right: 12px; bottom: 20px; opacity: .45; border-width: 1px; }
+.hero .code-decoration { top: -15px; right: 34%; font-size: 22px; opacity: .6; }
+@media (max-width: 767px) {
+  .hero .portrait-composition { width: 94%; padding: 26px 22px 30px; }
+  .hero .tech-label { width: 43px; height: 43px; border-radius: 12px; }
+  .hero .tech-label svg { width: 22px; height: 22px; }
+}

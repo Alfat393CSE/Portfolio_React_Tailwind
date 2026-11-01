@@ -1,0 +1,27 @@
+.about-layout { align-items: start; }
+.about-profile { background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
+.about-photo { height: 300px; overflow: hidden; background: #fff; }
+.about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 27%; }
+.about-profile-body { padding: 26px 28px; }
+.about-profile-body > h3 { margin: 0; font-size: 24px; letter-spacing: -.8px; }
+.about-designation { margin: 8px 0 4px; color: #739aff; font-size: 13px; font-weight: 500; }
+.about-employer { color: var(--muted); font-size: 11px; line-height: 1.8; margin: 0; }
+.about-employer span { white-space: nowrap; }
+.about-facts { margin-top: 22px; padding-top: 22px; border-top: 1px solid var(--line); display: grid; gap: 17px; }
+.about-facts > div { display: flex; align-items: start; gap: 12px; }
+.about-facts svg { color: #739aff; flex-shrink: 0; margin-top: 2px; }
+.about-facts dl { margin: 0; }
+.about-facts dt { color: var(--muted); font-size: 9px; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 6px; }
+.about-facts dd { margin: 0; font-size: 12px; line-height: 1.7; }
+.about-facts .about-university { color: var(--muted); font-size: 10px; margin-top: 3px; }
+.about-copy .about-kicker:first-child { color: #739aff; font-size: 9px; letter-spacing: 1.7px; margin: 4px 0 15px; }
+.about-copy h2 { margin-bottom: 25px; }
+.about-copy strong { color: var(--text); font-weight: 500; }
+.about-copy p { margin: 0 0 17px; font-size: 13px; line-height: 1.95; }
+.about-achievements { margin-top: 38px; }
+.achievement-card { padding: 25px 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); }
+.achievement-card > svg { color: #739aff; margin-bottom: 20px; }
+.achievement-card h3 { font-size: 10px; font-weight: 500; color: var(--muted); margin: 0 0 10px; }
+.achievement-value { font-size: 18px; line-height: 1.45; letter-spacing: -.5px; font-weight: 600; margin: 0 0 12px; }
+.achievement-detail { font-size: 11px; line-height: 1.8; color: var(--muted); margin: 0; }
+@media (max-width: 767px) { .about-photo { height: 320px; }.about-profile-body { padding: 24px; }.about-copy h2 { margin-bottom: 22px; }.about-achievements { margin-top: 28px; } }
